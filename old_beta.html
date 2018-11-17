@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>aoTuV old beta version</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="aoTuV - Ogg Vorbis Encoder old beta">
+<meta name="keywords" content="aoTuV,Ogg,Vorbis,Encoder,Sound,Audio,Software">
+<link rel="stylesheet" href="default.css" type="text/css"></head>
+<body>
+<div style="text-align: left;">
+<h1>aoTuV&nbsp; <small style="font-style: italic;"><small><span style="font-weight: bold;"><span style="text-decoration: underline;">Old
+beta
+version</span><br>
+</span></small></small></h1>
+<br><h2><span style="font-weight: bold;">Beta4.51</span><br>
+</h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><a style="font-weight: bold;" href="binary/aoTuV_b4.51.zip">win32
+binary</a><br style="font-weight: bold;">
+<a style="font-weight: bold;" href="source_code/libvorbis-aotuv_b4.51.tar.gz.tgz">source
+code</a><br>
+<small style="font-weight: bold;"><br>
+<br>
+</small><small style="font-weight: bold;">&nbsp;&nbsp;</small><span style="font-weight: bold;"># This is a bug fix release.&nbsp; There
+is no encode
+quality-difference fundamentally.&nbsp;</span><br><br>
+　・　バグフィックスリリースです。以前のバージョンでは環境によっては問題が生じることがありました。音質的な差異は
+基本的にあり
+ません。</div><h2>1<br><span style="font-weight: bold;"></span></h2><h2><span style="font-weight: bold;">Beta4.5</span><br>
+</h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><a style="font-weight: bold;" href="binary/aoTuV_b4.5.zip">win32
+binary</a><br style="font-weight: bold;">
+<a style="font-weight: bold;" href="source_code/libvorbis-aotuv_b4.5.tar.gz.tgz">source
+code</a><br>
+<small style="font-weight: bold;"><br>
+<br>
+</small><small style="font-weight: bold;">&nbsp;
+# Reexamination of a low bit rate region, the addition of the code
+accompanying it, and tuning. Influence has this change below
+quality3.&nbsp; Probably, in the especially low bit rate, it will
+be effective. <br>
+</small><br>
+　・　低ビットレート域の見直しと、それに伴うコードの追加とチューニング。今回の変化はquality3より下に影響があります。特に低いビットレート
+ほど、以前より大きな差があるでしょう<br>
+</div>
+<h2><br><span style="font-weight: bold;"></span></h2><h2><span style="font-weight: bold;">Beta4</span><br>
+</h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><a style="font-weight: bold;" href="binary/aoTuV_b4.zip">win32
+binary</a><br style="font-weight: bold;">
+<a style="font-weight: bold;" href="source_code/libvorbis-aotuv_b4.tar.gz.tgz">source code</a><br>
+<small style="font-weight: bold;"><br>
+<br>
+</small><small style="font-weight: bold;">&nbsp;
+# An addition and change of the code of a channel coupling processing
+portion. Thereby, disorder of the sound energy on hearing becomes
+small.&nbsp; And a part of additional code of beta3 which is not
+required has already been deleted now.<br>
+&nbsp; # Tuning of Masking relation and Noise Normalization. These
+mainly influence balance and the quantity of distortion which can be
+heard.<br>
+&nbsp; # The bit allocation by the low bit rate was devised. This
+is generally effective.<br>
+&nbsp; # Bug fix of beta3</small><br>
+<br>
+　・　channel coupling 処理部分のコードの追加・変更。これにより、聴覚上の音声エ<br>
+ネルギーのバラツキはより目立たなくなります。それに伴い必要のなくなった beta3<br>
+での追加コードの一部を削除しました。<br>
+　・　マスキング関連と、Noise Normalization のチューニング。これらは主に聴感の<br>
+バランスや歪感に影響します。<br>
+　・　低ビットレートでのビット割り当てを工夫した。これは全般に効果があります。<br>
+　・　beta3での追加コードの一部がうまく動いていなかったのを修正。<br>
+</div>
+<h2><br>
+<span style="font-weight: bold;"></span></h2>
+<h2><span style="font-weight: bold;">Beta3</span><br>
+</h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><a style="font-weight: bold;" href="binary/aoTuV_b3.zip">win32
+binary</a><br style="font-weight: bold;">
+<a style="font-weight: bold;" href="source_code/libvorbis-aotuv_b3.tar.gz.tgz">source code</a><br>
+<small style="font-weight: bold;"><br>
+<br>
+</small><small style="font-weight: bold;">　　&lt;
+&lt;Since beta2 was adopted as official 1.1, beta3 uses 1.1 as a
+base.
+&gt;&gt;<br>
+&nbsp; #&nbsp; bitrate management mode operates normally now.
+It not
+only became new, it offers new rate control. (changed part of Vorbis
+1.1 by Monty) <br>
+<br>
+　# Pre-echo was decreased in the mode of q0-q10. <br>
+&nbsp; # Since some codes of beta2 were not working normally,
+correction and re-tuning were carried out. <br>
+　# In the mode below q3, the problem to which a part of sound becomes
+unstable is improved. (e.g. piano/strings)<br>
+　# Distortion resulting from channel coupling was reduced. (e.g.
+brass/drumus/guitar)<br>
+　# The q-2 new mode. </small><br>
+<br>
+　&lt;&lt;beta2がオフィシャルの1.1に取り込まれたため、1.1ベースになりました&gt;&gt;<br>
+　・　bitrate management modeが正常に動作するようになりました。<br>
+　更に、新しいレートコントロールを提供します(Monty氏によるVorbis 1.1の変更点)。<br>
+<br>
+　・　q0～q10のモードでプリエコーを減少させた。<br>
+　・　beta2の一部のコードが正常に働いていなかったため、修正・再チューニングをした。<br>
+　・　q3より下のモードで、一部の音が不安定になる問題を改善（ピアノやストリングスなど）。<br>
+　・　チャンネルカップリングが原因で起こる歪みを抑えた（ブラスやドラムス、ギター他）。<br>
+　・　新しいq-2モード。</div>
+<span style="font-weight: bold;"><br>
+<br>
+</span>
+<h2><span style="font-weight: bold;">Beta2</span></h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><a style="font-weight: bold;" href="binary/aoTuV_b2.zip">win32
+binary</a><br style="font-weight: bold;">
+<a style="font-weight: bold;" href="source_code/libvorbis-aotuv_b2.tar.gz.tgz">source code</a><br>
+<br>
+<small style="font-weight: bold;"><br>
+</small><small style="font-weight: bold;">
+　# </small><small style="font-weight: bold;">The
+problem to which the sound
+of a
+specific range becomes large was reduced. <br>
+</small><small style="font-weight: bold;">　# </small><small style="font-weight: bold;">
+Tuning was improved in all bit rate regions. </small><br>
+<br>
+　・　特定のレンジの音が大きくなる問題を低減した。<br>
+　・　全てのビットレート域で、チューニングを見直した。</div>
+<span style="font-weight: bold;"><br>
+<br>
+</span>
+<h2><span style="font-weight: bold;">Beta1_a</span></h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><a style="font-weight: bold;" href="binary/aoTuV_b1a.zip">win32
+binary</a><br style="font-weight: bold;">
+<a style="font-weight: bold;" href="source_code/libvorbis-aotuv_b1a.tar.gz.tgz">source code</a><br>
+<small style="font-weight: bold;"><br>
+<br>
+</small><small style="font-weight: bold;">　# </small><small style="font-weight: bold;">
+The
+problem produced in q0 - q-1
+is corrected. <br>
+</small><small style="font-weight: bold;">　# </small><small style="font-weight: bold;">
+Due to the above-mentioned problem, Slightly, q0 - q-2 is readjusted. </small><br>
+<br>
+　・　
+q0～q-1で生じていた問題を修正<br>
+　・　
+上記の問題のからみからq0～q-2レンジの一部を再調整<br>
+</div>
+<br>
+<br>
+<h2><span style="font-weight: bold;">Beta1</span></h2>
+<div style="margin-left: 40px; background-color: rgb(206, 228, 255);"><small style="font-weight: bold;">
+　# </small><small style="font-weight: bold;">q1 -
+q5 are adjusted slightly. </small><br style="font-weight: bold;">
+<small style="font-weight: bold;">
+　# </small><small style="font-weight: bold;">q-2 -
+q0 is readjusted. </small><br style="font-weight: bold;">
+<small style="font-weight: bold;">
+　# </small><small style="font-weight: bold;">Arrangement
+of a source code. </small><br>
+<br>
+　・　q1～q5を僅かに調整<br>
+　・　
+q-2～q0を再調整<br>
+　・　
+ソースコードの整理<br>
+</div>
+<span style="font-weight: bold;"><br>
+<br>
+</span></div>
+<br>
+</body></html>
